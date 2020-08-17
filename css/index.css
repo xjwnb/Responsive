@@ -1,0 +1,15 @@
+body {
+  background: url('../assets/images/pc/内容底板.png');
+  padding: 0;
+  margin: 0;
+}
+body ,img, p {
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

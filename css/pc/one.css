@@ -1,0 +1,288 @@
+@media screen and  (max-width: 1920px) {
+
+/*   body {
+    position: relative;
+  } */
+  .container {
+    width: 970px;
+    height: auto;
+    margin: 0 auto;
+    transform: translate(0,0);
+    /* position: relative; */
+  }
+/*   .header img {
+    content: url("../../assets/images/pc/网页顶部.png")
+  } */
+  .video-title {
+    width: 100%;
+    display: flex;
+  }
+
+  .video-title img {
+    margin: 61px auto 113px;
+    justify-content: center;
+    /* content: url("../../assets/images/pc/标题1.png"); */
+  }
+  .line {
+    width: 5.5px;
+    height: 37px;
+    background-color: white;
+  }
+  .container .video-learn .learn .odd {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 400px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv {
+    position: absolute;
+    top: -46px;
+    display: flex;
+    margin: 0 30px 0;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDetailedDiv {
+    flex: 1;
+    width: 400px;
+    padding-left: 23px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageTitleDiv {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 44px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageTitleDiv p {
+    height:42px;
+    font-size:17px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(217,219,253,1);
+    line-height:25px;
+    letter-spacing: 2px;
+    
+  }
+  .container .video-learn .learn:nth-child(2n-1) .odd .messageAllMsgDiv .messageTitleDiv .messageText {
+    margin-left: 11px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDiv p {
+    width:377px;
+    height:115px;
+    font-size:16px;
+    font-family:SourceHanSansCN;
+    font-weight:300;
+    /* color:rgba(217,219,253,1); */
+    color: #9592B8;
+    line-height:25px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDetailedDiv .buyBtn {
+    background: url("../../assets/images/pc/btn.png");
+    width: 141px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    font-weight: 800;
+    font-size: 15px;
+    float: right;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDetailedDiv .buyBtn:hover {
+    cursor: pointer;
+  }
+
+  .learn {
+    position: relative;
+  }
+  .learn .rectDiv {
+    position: absolute;
+    top: 260px;
+
+  }
+  .title {
+    background: url("../../assets/images/pc/标题方块.png") no-repeat;
+    background-position: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    /* display: block; */
+    color: #9592B8;
+
+  }
+  .learnListDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+
+  }
+  .learnListDiv .learnDiv {
+    width: 294px;
+  }
+  .learnListDiv :nth-child(1) {
+    margin-right: 64px;
+  }
+  .learnListDiv .learnDiv p {
+    width: 294px;
+    color: #9592B8;
+    font-size:15px;
+    font-weight:400;
+    line-height:25px;
+  }
+  .course1ImgDiv {
+    cursor: pointer;
+  }
+
+  /* 播放 */
+  .course1ImgDiv :nth-child(1) {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+  }
+  .videoImgDiv :nth-child(1) {
+    position: absolute;
+  }
+  .learnListDiv :nth-child(1) :nth-child(1) {
+    top: 60px;
+    left: 250px;
+  }
+  .learnListDiv :nth-child(2) :nth-child(1) {
+    top: 60px;
+    left: 600px;
+  }
+  .videoImgDiv {
+    cursor: pointer;
+  }
+
+  /* 修改偶数课程样式 */
+  .learn:nth-child(2n) .odd .messageAllMsgDiv {
+    position: relative;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .course1ImgDiv {
+    position: relative;
+    left: 420px;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .messageDetailedDiv {
+    position: relative;
+    left: -450px;
+  }
+  /* 配套权益 */
+  .matching img {
+    display: block;
+    margin: 0 auto 65px;
+  }
+  .matching-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .matching-list div {
+    float: left;
+    width: 231px;
+    height: 200px;
+    background-image: url("../../assets/images/pc/rights.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .match1 {
+
+    background-position: 0px 0px;
+  }
+  .match2 {
+
+    background-position: -231px 0px;
+  }
+  .match3 {
+
+    background-position: -462px 0px;
+  }
+  .match4 {
+
+    background-position: -693px 0px;
+  } 
+  .match5 {
+
+    background-position: 0px -200px;
+  }
+  .match6 {
+
+    background-position: -231px -200px;
+  }
+  .match7 {
+
+    background-position: -462px -200px;
+  }
+  .match8 {
+
+    background-position: -693px -200px;
+  }
+
+  /* 新课上线 */
+  .new-learn img {
+    display: block;
+    margin: 125px auto 70px;
+  }
+  .price-learn img {
+    display: block;
+    margin: 0 auto;
+  }
+  .qr-code img {
+    display: block;
+    margin: 59px auto 30px;
+  }
+
+  /* 底部 */
+  .footer {
+    display: block;
+    /* text-align: center; */
+    margin: 0 auto;
+  }
+  .footer :nth-child(1) {
+    width:186px;
+    height:22px;
+    font-size:22px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(237,207,183,1);
+    line-height:25px;
+    display: block;
+    margin: 0 auto;
+  }
+  .footer :nth-child(2) {
+    width:228px;
+    height:17px;
+    font-size:16px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(205,205,209,1);
+    line-height:25px;
+    display: block;
+    margin: 7px auto 12px;
+  }
+  .footer :nth-child(3) {
+    width:207px;
+    height:13px;
+    font-size:13px;
+    font-family:SourceHanSansCN;
+    font-weight:400;
+    color:rgba(205,205,209,1);
+    line-height:25px;
+    display: block;
+    margin: 0 auto 150px;
+  }
+
+  /* 侧边二维码 */
+  .fixed-qr-code {
+    position: fixed;
+    top: 350px;
+    left: 950px;
+  }
+
+  .videoData {
+    position: absolute;
+    z-index: 999;
+  }
+  /* video */
+  .videoDiv {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 300px;
+  } 
+
+}

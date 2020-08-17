@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>金十数据</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/pc/one.css" />
+    <link rel="stylesheet" href="./css/mobile/one.css" />
+    <!-- 数据和方法 -->
+    <script src="./js/videoData.js"></script>
+    <script src="./js/videoLearnFun.js"></script>
+    <script src="./js/video.js"></script>
+    <!-- video插件 -->
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./assets/images/pc/网页顶部.png" alt="页面顶部" />
+    </div>
+    <div class="container">
+      <div class="video-title">
+        <img src="./assets/images/pc/标题1.png" alt="视频课程" srcset="" />
+      </div>
+      <div class="video-learn"></div>
+      <div class="matching">
+        <img src="./assets/images/pc/标题2.png" alt="配套权益" />
+      </div>
+      <div class="matching-list">
+        <div class="match1"></div>
+        <div class="match2"></div>
+        <div class="match3"></div>
+        <div class="match4"></div>
+        <div class="match5"></div>
+        <div class="match6"></div>
+        <div class="match7"></div>
+        <div class="match8"></div>
+      </div>
+      <div class="new-learn">
+        <img src="./assets/images/pc/标题3.png" alt="新课上线，福利大放送" />
+      </div>
+      <div class="price-learn">
+        <img
+          src="./assets/images/pc/688.png"
+          alt="附赠基础技术指标课（价值688元）"
+        />
+      </div>
+      <div class="qr-code">
+        <img src="./assets/images/pc/二维码.png" alt="二维码" />
+      </div>
+      <div class="footer">
+        <p>微信扫码立即领取</p>
+        <p>交易学霸微信号： jin1010086</p>
+        <p>她朋友圈有点意思，要不加上看看</p>
+      </div>
+      <div class="fixed-qr-code">
+        <!-- <img src="./assets/images/pc/fixedqr.png" alt="二维码" /> -->
+      </div>
+    </div>
+    <script>
+      var fixedQrCode = document.querySelector(".fixed-qr-code");
+      var videoTitle = document.querySelector(".video-title");
+      var matching = document.querySelector(".matching");
+      var newLearn = document.querySelector(".new-learn");
+      var priceLearn = document.querySelector(".price-learn");
+      var qrCode = document.querySelector(".qr-code");
+      var footer = document.querySelector(".footer");
+      var fixedQrCode = document.querySelector(".fixed-qr-code");
+      var headerDiv = document.querySelector(".header");
+
+      var device = null;
+      if (window.innerWidth > 501) {
+        videoLearnFun(videoData, "pc");
+        maxChange();
+        device = "pc";
+      } else {
+        videoLearnFun(videoData, "mobile");
+        device = "mobile";
+        minChange();
+      }
+
+      // 移动改变函数
+      function minChange() {
+        var newLearnImg = document.querySelector(".new-learn")
+          .firstElementChild;
+        newLearnImg.setAttribute("src", "./assets/images/mobile/标题3.png");
+        headerDiv.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/header.png"
+        );
+        videoTitle.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/标题1.png"
+        );
+        matching.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/标题2.png"
+        );
+        newLearn.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/标题3.png"
+        );
+        priceLearn.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/688.png"
+        );
+        qrCode.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/mobile/二维码.png"
+        );
+        footer.firstElementChild.innerHTML = "长按二维码立即领取";
+        footer.lastElementChild.innerHTML = "";
+        fixedQrCode.innerHTML = "";
+      }
+
+      // pc改变函数
+      function maxChange() {
+        var container = document.querySelector(".container");
+        headerDiv.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/网页顶部.png"
+        );
+        videoTitle.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/标题1.png"
+        );
+        matching.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/标题2.png"
+        );
+        newLearn.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/标题3.png"
+        );
+        priceLearn.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/688.png"
+        );
+        qrCode.firstElementChild.setAttribute(
+          "src",
+          "./assets/images/pc/二维码.png"
+        );
+        footer.firstElementChild.innerHTML = "微信扫码立即领取";
+        footer.lastElementChild.innerHTML = "她朋友圈有点意思，要不加上看看";
+        fixedQrCode.innerHTML = "";
+        var fixedQrCodeImg = document.createElement("img");
+        fixedQrCodeImg.setAttribute("src", "./assets/images/pc/fixedqr.png");
+        fixedQrCode.appendChild(fixedQrCodeImg);
+      }
+
+      window.onscroll = function () {
+        var sTop =
+          document.documentElement.scrollTop ||
+          window.pageYOffset ||
+          document.body.scrollTop;
+        fixedQrCode.offsetTop = sTop + fixedQrCode.offsetTop;
+        fixedQrCode.style.top = sTop + 250 + "px";
+      };
+      window.onresize = function () {
+
+        if (window.innerWidth <= 500) {
+          minChange();
+          if (device !== "mobile") {
+            // document.getElementsByClassName("learn") && document.querySelector(".video-learn").removeChild(document.getElementsByClassName("learn"))
+            document.querySelector(".video-learn").innerHTML = "";
+            console.log("mobile");
+            videoLearnFun(videoData, "mobile");
+            device = "mobile";
+          }
+        }
+        if (window.innerWidth > 500) {
+          maxChange();
+          // 课程数据
+          console.log(videoData);
+          if (device !== "pc") {
+            document.querySelector(".video-learn").innerHTML = "";
+            videoLearnFun(videoData, "pc");
+            device = "pc";
+          }
+        }
+        console.log(device);
+      };
+      console.log(window);
+      console.dir(document.querySelector(".fixed-qr-code"));
+
+      var buyBtnAction = document.getElementsByClassName("buyBtn");
+
+      var course1ImgDiv = document.getElementsByClassName("course1ImgDiv");
+
+      // 循环添加点击弹出video事件
+      for (var i = 0; i < course1ImgDiv.length; i++) {
+        !(function (i) {
+          course1ImgDiv[i].addEventListener("click", function () {
+            video(videoData[i + 1].images.videoURL)
+          });
+        })(i);
+      }
+      var videoImgDiv = document.getElementsByClassName("videoImgDiv");
+      for (var i = 0; i < videoImgDiv.length; i++) {
+        if (i === 0) {
+          !(function (i) {
+            videoImgDiv[i].addEventListener("click", function () {
+              video(videoData[1].learnList[i].videoURL)
+            });
+          })(i);
+        }else if (i % 2 !== 0) {
+          !(function (i) {
+            videoImgDiv[i].addEventListener("click", function () {
+              video(videoData[(i+1)/2].learnList[0].videoURL)
+            });
+          })(i);
+        } else {
+          !(function (i) {
+            videoImgDiv[i].addEventListener("click", function () {
+              video(videoData[i/2].learnList[1].videoURL)
+            });
+          })(i);
+        }
+      }
+    </script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+  </body>
+</html>

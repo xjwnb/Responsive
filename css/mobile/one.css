@@ -1,0 +1,256 @@
+@media screen and (max-width: 500px) {
+  .container {
+    width: 375px;
+    height: auto;
+    margin: 0 auto;
+    transform: translate(0,0);
+    /* position: relative; */
+  }
+  .header {
+    width: 358px;
+    height: 400px; 
+    margin: 51px auto 0;
+
+  }
+  .header img {
+    display: block;
+    margin: 0 auto;
+  }
+  .video-title img {
+    margin: 0 auto 100px;
+  }
+  .odd img {
+    display: block;
+    margin: 0 auto;
+  }
+  .learn:nth-child(2n) .odd img {
+    position: static;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .course1ImgDiv {
+    position: relative;
+    left: 0px;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .messageDetailedDiv {
+    position: relative;
+    left: -330px;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .messageDetailedDiv .messageText {
+    margin-left: 10px;
+  }
+
+
+
+
+  .container .video-learn .learn .odd .messageAllMsgDiv {
+    position: absolute;
+/*     top: -46px;
+    display: flex;
+    margin: 0 30px 0; */
+  }
+
+  .messageDetailedDiv {
+    position: relative;
+    display: table;
+    left: -330px;
+    top: 210px;
+  }
+  .messageDetailedDiv .numOdd {
+    position: relative;
+    left: -150px;
+    top: -325px;
+    z-index: 2;
+  }
+
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDetailedDiv {
+    flex: 1;
+    width: 400px;
+    padding-left: 23px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageTitleDiv {
+    display: flex;
+    display: table-footer-group;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 120px;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageTitleDiv p {
+    width:244px;
+    height:31px;
+    font-size:13px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(218,220,254,1);
+    line-height:19px;
+    
+  }
+  .container .video-learn .learn:nth-child(2n-1) .odd .messageAllMsgDiv .messageTitleDiv .messageText {
+    margin-left: 11px;
+  }
+  .messageDiv {
+    display:table-header-group;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDiv p {
+    width:260px;
+    height:83px;
+    font-size:11px;
+    font-family:SourceHanSansCN;
+    font-weight:500;
+    color:rgba(218,220,254,1);
+    line-height:19px;
+  }
+  .line {
+    position: absolute;
+  }
+  .container .video-learn .learn .odd .messageAllMsgDiv .messageDetailedDiv .buyBtn {
+    background: url("../../assets/images/pc/btn.png");
+    width: 141px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    font-weight: 800;
+    font-size: 15px;
+    float: unset;
+    position: relative;
+    top: 50px;
+    left: 60px;
+  }
+
+  .title {
+    background: url("../../assets/images/mobile/方块.png") no-repeat;
+    background-position: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    /* display: block; */
+    color: #9592B8;
+    font-size: 10px;
+    
+  }
+  .learnListDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -200px;
+
+  }
+  .learnListDiv .learnDiv {
+    width: 168px;
+  }
+  .learnListDiv :nth-child(1) {
+    margin-right: 9px;
+  }
+  .learnListDiv .learnDiv p {
+    width: 168px;
+    color: #9592B8;
+    font-size:15px;
+    font-weight:400;
+    line-height:25px;
+  }
+  .learn {
+    position: relative;
+  }
+  .learn .rectDiv {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+
+  }
+  .course1ImgDiv {
+    position: relative;
+  }
+
+  /* 播放 */
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .course1ImgDiv {
+    position: relative;
+  }
+  .learn:nth-child(2n) .odd .messageAllMsgDiv .course1ImgDiv :nth-child(1) {
+    position: absolute;
+  }
+  .course1ImgDiv :nth-child(1) {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+  }
+  
+  .videoImgDiv :nth-child(1) {
+    position: absolute;
+  }
+  .learnListDiv :nth-child(1) :nth-child(1) {
+    top: 40px;
+    left: 80px;
+  }
+  .learnListDiv :nth-child(2) :nth-child(1) {
+    top: 40px;
+    left: 250px;
+  }
+  .videoImgDiv {
+    cursor: pointer;
+  }
+
+  /* 权限 */
+  .matching-list {
+    width: 200px;
+    margin: 0 auto;
+  }
+  .matching-list div {
+    float: left;
+    width: 96px;
+    height: 128px;
+    background-image: url("../../assets/images/mobile/rights.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .match1 {
+
+    background-position: 0px 0px;
+  }
+  .match2 {
+
+    background-position: -96px 0px;
+  }
+  .match3 {
+
+    background-position: 0px -128px;
+  }
+  .match4 {
+
+    background-position: -96px -128px;
+  } 
+  .match5 {
+
+    background-position: 0px -256px;
+  }
+  .match6 {
+
+    background-position: -96px -256px;
+  }
+  .match7 {
+
+    background-position: 0px -384px;
+  }
+  .match8 {
+    background-position: -96px -384px;
+  }
+
+  /* footer */
+  .footer :nth-child(1) {
+    width:143px;
+    height:15px;
+    font-size:15px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(238,208,184,1);
+    line-height:17px;
+  }
+  .footer :nth-child(2) {
+    width:200px;
+    height:10px;
+    font-size:9px;
+    font-family:SourceHanSansCN;
+    font-weight:800;
+    color:rgba(205,205,210,1);
+    line-height:17px;
+  }
+}
